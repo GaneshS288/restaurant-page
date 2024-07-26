@@ -7,7 +7,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: "Restaraunt Page",
+            filename: 'index.html',
             template: './src/index.html'
         })
     ],
