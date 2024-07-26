@@ -1,12 +1,18 @@
 export function restaurantHeader(imageSrc) {
+
+    const headerLogoContainer = document.createElement('div');
+
     //TODO: specify height and width once you choose the banner image
-    const headerImg = new Image(300, 400);
-    headerImg.style.border = "20px red"
-    
+    const headerLogoImg = new Image(400, 400);
+    headerLogoImg.style.border = "20px red"
+    headerLogoImg.src = imageSrc;
+
+    const headerLogoTitle = document.createElement('p');
+    headerLogoTitle.textContent = "Maharaja Culinary";
+
     const header = document.querySelector('header');
 
-    header.append(headerImg);
-
-    const headerTitle = document.createElement('p');
-    header.append(headerTitle);
+    headerLogoContainer.append(headerLogoImg);
+    headerLogoContainer.append(headerLogoTitle);
+    header.prepend(headerLogoContainer);
 }
