@@ -64,7 +64,7 @@ header div {
 	border: 2px solid red;
 }
 
-p {
+.header-title {
 	font: 1.4rem helvetica;
 }
 

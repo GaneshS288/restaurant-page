@@ -7,6 +7,7 @@ export function renderHeader(imageSrc) {
     headerLogoImg.src = imageSrc;
     headerLogoImg.classList.add('header-logo');
     const headerLogoTitle = document.createElement('p');
+    headerLogoTitle.classList.add('header-title');
     headerLogoTitle.textContent = "Maharaja Culinary";
 
     const header = document.querySelector('header');
