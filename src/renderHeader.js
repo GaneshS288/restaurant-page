@@ -16,3 +16,4 @@ export function renderHeader(imageSrc) {
     headerLogoContainer.append(headerLogoTitle);
     header.prepend(headerLogoContainer);
 }
+

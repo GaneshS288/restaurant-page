@@ -44,6 +44,20 @@ table {
 
 /*reset above here */
 
+:root {
+	--dark-blue: #264653;
+	--light-blue: #2A9D8F;
+	--golden: #E9C46A;
+	--light-orange: #F4A261;
+	--dark-orange: #E76F51; 
+}
+
+body {
+	background: no-repeat url(./background.jpg) center center;
+	background-size: cover;
+	min-height: 100vh;
+}
+
 header {
     display: grid;
     grid-template-columns: 1fr;
@@ -75,7 +89,7 @@ header nav {
 }
 
 nav button {
-	background : rgb(166, 26, 26);
+	background : var(--dark-orange);
 	flex: 1;
 	max-width: 100px;
 	min-height: 40px;
@@ -84,7 +98,31 @@ nav button {
 }
 
 button:active {
-	background-color: gold;
+	background-color: var(--golden);
 	box-shadow: inset 0px 0px 5px #c1c1c1;
+}
+
+/*header style above*/
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--golden);
+	padding: 1rem;
+}
+
+footer p {
+	font: 1.4rem helvetica;
+}
+
+footer a {
+	text-decoration: underline;
+	color: var(--light-blue) ;
+	font: 1.2rem "noto sans"
+}
+
+footer a:visited {
+	color: var(--dark-blue);
 }
 
