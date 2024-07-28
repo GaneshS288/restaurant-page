@@ -1,4 +1,4 @@
-export function restaurantHeader(imageSrc) {
+export function renderHeader(imageSrc) {
 
     const headerLogoContainer = document.createElement('div');
 

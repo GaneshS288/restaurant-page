@@ -1,5 +1,7 @@
 import './style.css'
 import CrownImg from './crown.svg'
-import { restaurantHeader } from './renderHeader.js'
+import { renderHeader } from './renderHeader.js'
+import { renderFooter } from './renderFooter.js';
 
-restaurantHeader(CrownImg);
+renderHeader(CrownImg);
+renderFooter();

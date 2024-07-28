@@ -71,7 +71,7 @@ p {
 header nav {
     display: flex;
 	justify-content: center;
-	gap: 0.5rem;
+	gap: 2rem;
 }
 
 nav button {
@@ -79,7 +79,6 @@ nav button {
 	flex: 1;
 	max-width: 100px;
 	min-height: 40px;
-	border-radius: 10px;
 	font: 1.5rem roboto;
 	border: none;
 }
@@ -87,6 +86,5 @@ nav button {
 button:active {
 	background-color: gold;
 	box-shadow: inset 0px 0px 5px #c1c1c1;
-	border: none;
 }
 
