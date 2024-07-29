@@ -56,6 +56,9 @@ body {
 	background: no-repeat url(./background.jpg) center center;
 	background-size: cover;
 	min-height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr;
+	row-gap: 4rem;
 }
 
 header {
@@ -104,6 +107,33 @@ button:active {
 
 /*header style above*/
 
+.content {
+	display: grid;
+	grid-template-columns: 1fr;
+	place-items: center;
+	margin: 0 20%;
+	border: 3px solid var(--golden);
+	background-color: var(--dark-blue);
+	color: white;
+}
+
+h2 {
+	font: 1.8rem "Times new Roman";
+}
+
+hr {
+	width: 90%;
+	height: 0;
+	border: 2px solid var(--light-orange);
+}
+
+/*general content style above*/
+.home-content {
+	font: 1rem helvetica;
+	padding: 0 20px;
+}
+
+/*home content style above*/
 footer {
 	display: flex;
 	justify-content: space-between;

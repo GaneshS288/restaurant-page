@@ -1,7 +1,7 @@
 export function renderHome() {
     const homeContainer = document.querySelector('.content');
     const homeTitle = document.createElement('h2');
-    const homeLineBreak = document.createElement('br');
+    const homeHorizontalRule = document.createElement('hr');
     const homeParagraph = document.createElement('p');
 
     homeTitle.textContent = "Home";
@@ -12,6 +12,6 @@ export function renderHome() {
     homeParagraph.classList.add('home-content');
 
     homeContainer.append(homeTitle);
-    homeContainer.append(homeLineBreak);
+    homeContainer.append(homeHorizontalRule);
     homeContainer.append(homeParagraph);
 }
