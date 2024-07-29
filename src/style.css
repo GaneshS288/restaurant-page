@@ -75,7 +75,7 @@ header div {
 	width: 100px;
 	height:100px;
 	border-radius: 50%;
-	border: 2px solid red;
+	background-color: #264653;
 }
 
 .header-title {

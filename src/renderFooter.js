@@ -9,7 +9,7 @@ export function renderFooter() {
     address.innerHTML = "<p>Road No. 12,</br> Malviya Nagar,</br> Jaipur, Rajasthan</p></br>";
     phoneNumber.href = "tel: +9123456789";
     phoneNumber.textContent = "+9123456789";
-    resourceCredits.innerHTML = "<a href = 'https://unsplash.com/photos/GWNKZ0jpeJA'>background image by unsplash</a>"
+    resourceCredits.innerHTML = "<a href = 'https://unsplash.com/photos/GWNKZ0jpeJA'>background image by unsplash</a>";
 
     footer.append(businessHours);
     footer.append(address);
