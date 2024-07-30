@@ -4,28 +4,36 @@ import { renderHeader } from './renderHeader.js'
 import { renderFooter } from './renderFooter.js';
 import { renderHome } from './renderHome.js'
 import { renderMenu } from './renderMenu.js'
+import { renderAbout } from './renderAbout.js';
 
 renderHeader(CrownImg);
 renderFooter();
 renderHome();
 
-const homeButton = document.querySelector('.home');
-homeButton.addEventListener('click', () => {
+function removeContent() {
     const content = document.querySelector('.content');
     (document.querySelectorAll('.content > *')).forEach((childnode) => {
         content.removeChild(childnode);
-    })
+    });
+}
 
+const homeButton = document.querySelector('.home');
+
+homeButton.addEventListener('click', () => {
+    removeContent();
     renderHome();
 } )
 
 const menuButton = document.querySelector('.menu');
 
 menuButton.addEventListener('click', () => {
-    const content = document.querySelector('.content');
-    (document.querySelectorAll('.content > *')).forEach((childnode) => {
-        content.removeChild(childnode);
-    })
-
+    removeContent();
     renderMenu();
 } )
+
+const aboutButton = document.querySelector('.about');
+
+aboutButton.addEventListener('click', () => {
+    removeContent();
+    renderAbout();
+})
