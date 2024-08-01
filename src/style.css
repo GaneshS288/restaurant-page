@@ -65,13 +65,16 @@ header {
     display: grid;
     grid-template-columns: 1fr;
     align-content: center;
-	row-gap: 1rem;
+	row-gap: 2rem;
+	background-color: var(--light-orange);
+	padding: 20px 0px;
 }
 
 header div {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
+	row-gap: 1rem;
 }
 
 .header-logo {
@@ -82,7 +85,8 @@ header div {
 }
 
 .header-title {
-	font: 1.4rem helvetica;
+	font: 1.4rem Impact;
+	color: red;
 }
 
 header nav {
@@ -112,13 +116,23 @@ button:active {
 	grid-template-columns: 1fr;
 	place-items: center;
 	margin: 0 20%;
+	row-gap: 2rem;
+	padding: 2rem;
 	border: 3px solid var(--golden);
-	background-color: var(--dark-blue);
+	background-color: var(--light-orange);
 	color: white;
 }
 
 h2 {
 	font: 1.8rem "Times new Roman";
+	color: var(--dark-blue);
+	text-decoration: underline;
+}
+
+.content p {
+	text-align: center;
+	font: 1.3rem verdana;
+	color: bisque;
 }
 
 hr {
@@ -134,6 +148,25 @@ hr {
 }
 
 /*home content style above*/
+
+form {
+	display: grid;
+	place-items: center;
+	row-gap: 20px;
+}
+
+form > div {
+	display: grid;
+	row-gap: 20px;
+}
+
+label {
+	font: 1.2rem roboto;
+
+}
+
+/*about page style above */
+
 footer {
 	display: flex;
 	justify-content: space-between;
@@ -144,6 +177,7 @@ footer {
 
 footer p {
 	font: 1.4rem helvetica;
+	color: cornsilk;
 }
 
 footer a {

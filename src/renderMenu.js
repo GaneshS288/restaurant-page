@@ -6,9 +6,9 @@ export function renderMenu() {
     const daalBatiChurma = document.createElement('p');
 
     menuTitle.textContent = "Menu";
-    shaiPaneer.textContent = "Shai Paneer -> 100Rs"
-    maharajaThali.textContent = "Maharaja Thali -> 180Rs"
-    daalBatiChurma.textContent = "Daal Bati Churma -> 70Rs"
+    shaiPaneer.textContent = "Shai Paneer : 100Rs"
+    maharajaThali.textContent = "Maharaja Thali : 180Rs"
+    daalBatiChurma.textContent = "Daal Bati Churma : 70Rs"
     
     menuContainer.append(menuTitle);
     menuContainer.append(document.createElement('hr'));

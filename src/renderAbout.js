@@ -42,9 +42,9 @@ export function renderAbout() {
     formTextareaContainer.classList.add('for-textarea-container');
     form.append(formTextareaContainer);
 
-    const formTextareaLable = document.createElement('lable');
+    const formTextareaLable = document.createElement('label');
     formTextareaLable.for = 'question';
-    formTextareaLable.textContent = 'your inquiry:';
+    formTextareaLable.textContent = 'Your inquiry:';
     formTextareaContainer.append(formTextareaLable);
 
     const formTextarea = document.createElement('textarea');
