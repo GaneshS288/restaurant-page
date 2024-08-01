@@ -61,6 +61,8 @@ body {
 	row-gap: 4rem;
 }
 
+
+
 header {
     display: grid;
     grid-template-columns: 1fr;
@@ -132,7 +134,7 @@ h2 {
 .content p {
 	text-align: center;
 	font: 1.3rem verdana;
-	color: bisque;
+	color: brown;
 }
 
 hr {
@@ -177,7 +179,7 @@ footer {
 
 footer p {
 	font: 1.4rem helvetica;
-	color: cornsilk;
+	color: brown;
 }
 
 footer a {
@@ -190,3 +192,7 @@ footer a:visited {
 	color: var(--dark-blue);
 }
 
+nav .selected {
+	background-color: var(--light-blue);
+	color: gold;
+}

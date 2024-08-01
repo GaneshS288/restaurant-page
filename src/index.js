@@ -18,10 +18,14 @@ function removeContent() {
 }
 
 const homeButton = document.querySelector('.home');
+homeButton.classList.add('selected');
 
 homeButton.addEventListener('click', () => {
     removeContent();
     renderHome();
+    homeButton.classList.add('selected');
+    menuButton.classList.remove('selected');
+    aboutButton.classList.remove('selected');
 } )
 
 const menuButton = document.querySelector('.menu');
@@ -29,6 +33,10 @@ const menuButton = document.querySelector('.menu');
 menuButton.addEventListener('click', () => {
     removeContent();
     renderMenu();
+
+    homeButton.classList.remove('selected');
+    menuButton.classList.add('selected');
+    aboutButton.classList.remove('selected');
 } )
 
 const aboutButton = document.querySelector('.about');
@@ -36,4 +44,8 @@ const aboutButton = document.querySelector('.about');
 aboutButton.addEventListener('click', () => {
     removeContent();
     renderAbout();
+
+    homeButton.classList.remove('selected');
+    menuButton.classList.remove('selected');
+    aboutButton.classList.add('selected');
 })
