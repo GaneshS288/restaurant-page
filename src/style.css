@@ -52,6 +52,13 @@ table {
 	--dark-orange: #E76F51; 
 }
 
+@font-face {
+	font-family: 'Dancing Script';
+	src: url(./Dancing_Script_Variable.ttf) format(truetype);
+	font-style: normal;
+	font-weight: 600;
+}
+
 body {
 	background: no-repeat url(./background.jpg) center center;
 	background-size: cover;
@@ -87,7 +94,7 @@ header div {
 }
 
 .header-title {
-	font: 1.4rem Impact;
+	font: 1.6rem 'Dancing Script';
 	color: red;
 }
 
@@ -133,7 +140,7 @@ h2 {
 
 .content p {
 	text-align: center;
-	font: 1.3rem verdana;
+	font: 1.3rem Garmond;
 	color: brown;
 }
 
@@ -178,14 +185,14 @@ footer {
 }
 
 footer p {
-	font: 1.4rem helvetica;
+	font: 1.4rem Garmond;
 	color: brown;
 }
 
 footer a {
 	text-decoration: underline;
 	color: var(--light-blue) ;
-	font: 1.2rem "noto sans"
+	font: 1.2rem Impact
 }
 
 footer a:visited {
